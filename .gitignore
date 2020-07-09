@@ -24,3 +24,6 @@ mix_protobuffs-*.tar
 
 .elixir_ls/
 include/*_pb.hrl
+_build
+deps
+mix.lock
