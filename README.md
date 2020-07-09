@@ -27,7 +27,9 @@ def application do
   [
     # ...
     compilers: Mix.compilers() ++ [:embed_binaries],
-    embed_binaries: ["path/*.{foo,bar}"]
+    embed_binaries: ["*.{png,jpg}"]
   ]
 end
 ```
+
+Then you can access the embedded binaries with (e.g.) `frog_jpg:bin()` (Erlang) or `:frog_jpg.bin()` (Elixir).
